@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Train Scheduler</title>
+    <!-- jQuery -->
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Anytime is Train Time</h1>
+			<h3 class="text-center">Choo Choo. Chee Chee.</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading"> 
+              <h4 class="panel-title">Current Train Schedule</h4>
+          </div>    
+          	<table class="table">
+          		<tr>
+          			<th>Train Name</th>
+          			<th>Destination</th>
+          			<th>Frequency (min)</th>
+          			<th>Next Arrival</th>
+          			<th>Minutes Away</th>
+          		</tr>
+          		<tr>
+          			<th>Trenton Express</th>
+          			<th>Trenton</th>
+          			<th>25</th>
+          			<th>05:35 PM</th>
+          			<th>10</th>
+          		</tr>
+          		<tr>
+          			<th>Oregon Trail</th>
+          			<th>Salem,Oregon</th>
+          			<th>3600</th>
+          			<th>01:39 PM</th>
+          			<th>1154</th>
+          		</tr>
+          		<tr>
+          			<th>Midnight Carriage </th>
+          			<th>Philadelphia</th>
+          			<th>15</th>
+          			<th>05:35 PM</th>
+          			<th>10</th>
+          		</tr>
+          		<tr>
+          			<th>Sing Sing Caravan</th>
+          			<th>Atlanta</th>
+          			<th>45</th>
+          			<th>05:53 PM</th>
+          			<th>28</th>
+          		</tr>
+          		<tr>
+          			<th>Boston Bus</th>
+          			<th>Boston</th>
+          			<th>65</th>
+          			<th>05:50 PM</th>
+          			<th>25</th>
+          		</tr>
+          		<tr>
+          			<th>California Caravan</th>
+          			<th>San Francisco</th>
+          			<th>6000</th>
+          			<th>01:25 PM</th>
+          			<th>4740</th>
+          		</tr>
+          		<tr>
+          			<th>Analben's Train</th>
+          			<th>Florida</th>
+          			<th>25</th>
+          			<th>05:28 PM</th>
+          			<th>3</th>
+          		</tr>
+          	</table>
+				</div>
+			</div>
+		</div>
+   	<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading"> 
+        		<h4 class="panel-title">Add Train</h4>
+        	</div>
+
+    <form>
+				<label for="train-name">Train Name</label>
+				<input type="text" class="form-control" id="train-name">
+				<label for="destination">Destination</label>
+				<input type="text" class="form-control" id="destination">
+				<label for="first-train">First Train Time (HH:mm - military time)</label>
+				<input type="text" class="form-control" id="first-train">
+				<label for="frequency">Frequency (min)</label>
+				<input type="" class="form-control" id="frequency">
+				<button type="submit" class="btn-primary" id="submit">Submit</button>
+	  </form>
+
+    </div> 
+   </div>  
+  </div>
+
+
+</div>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="logic.js"></script>
+
+</body>
+</html>
