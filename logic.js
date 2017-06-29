@@ -42,16 +42,21 @@
     console.log(sv.destination);
     console.log(sv.train);
     console.log(sv.frequency);
-
+    var newtime = moment(snapshot.currentTime).endOf('minute').fromNow();
     var row = $('<tr>');
-      row.append($('<td>' + sv.name + '<td>'));
-      row.append($('<td>' + sv.destination + '<td>'));
-      row.append($('<td>' + sv.train + '<td>'));
-      row.append($('<td>' + sv.frequency + '<td>'));
+      row.append($('<td>'+ sv.name +'</td>'));
+      row.append($('<td>'+ sv.destination +'</td>'));
+      row.append($('<td>'+ sv.train +'</td>'));
+      row.append($('<td>'+ sv.frequency +'</td>'));
+      row.append($('<td>'+ newtime +'</td>'));
 
       console.log(row);
 
       $('.table').append(row);
+
+  
+
+
 
   });
 
